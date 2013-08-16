@@ -12,8 +12,9 @@ apply plugin: 'release'
 release {
   failOnUnversionedFiles = false
   failOnUpdateNeeded = false
-  version = git describe --abbrev=0
 }
+
+tagVersion = 'git describe --abbrev=0'
 
 apply plugin: 'war'
 apply plugin: 'jetty'
@@ -31,7 +32,7 @@ dependencies {
 
 war {
     manifest {
-        attributes 'Implementation-Title': 'Gradle Quickstart', 'Implementation-Version': version
+        attributes 'Implementation-Title': 'Gradle Quickstart', 'Implementation-Version': tagVersion
     }
 }
 /* Change context path (base url). otherwise defaults to name of project */
