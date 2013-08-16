@@ -14,7 +14,7 @@ release {
   failOnUpdateNeeded = false
 }
 
-tagVersion = 'git describe --abbrev=0'
+tagVersion = commandLine 'git describe --abbrev=0'
 
 apply plugin: 'war'
 apply plugin: 'jetty'
