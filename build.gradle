@@ -12,6 +12,7 @@ apply plugin: 'release'
 release {
   failOnUnversionedFiles = false
   failOnUpdateNeeded = false
+  version = git describe --abbrev=0
 }
 
 apply plugin: 'war'
