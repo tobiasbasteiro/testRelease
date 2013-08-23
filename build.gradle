@@ -35,7 +35,7 @@ subprojects {
 	  failOnUnversionedFiles = false
 	  failOnUpdateNeeded = false
       pushToCurrentBranch = true
-      scmRootDir = /
+      scmRootDir = '/'
 	}
 
 }
