@@ -34,11 +34,9 @@ subprojects {
 	release {
 	  failOnUnversionedFiles = false
 	  failOnUpdateNeeded = false
+       git.scmRootDir = "/"
 	}
-	
-	project.release {
-		git.scmRootDir = "/"
-	}
+
 }
 
 repositories {
