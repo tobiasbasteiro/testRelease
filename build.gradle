@@ -19,6 +19,25 @@ apply plugin: 'war'
 apply plugin: 'jetty'
 apply plugin: 'eclipse-wtp'
 
+subprojects {
+	buildscript {
+	   repositories {
+	      mavenCentral()
+	      maven { url "https://oss.sonatype.org/content/groups/public"}
+	   }
+	   dependencies {
+	      classpath 'com.github.townsfolk:gradle-release:1.2'
+	   }
+	}
+	apply plugin: 'release'
+	
+	release {
+	  failOnUnversionedFiles = false
+	  failOnUpdateNeeded = false
+	  requireBranch = 'master'
+	}    
+}
+
 repositories {
    mavenCentral()
 }
