@@ -35,6 +35,7 @@ subprojects {
 	  failOnUnversionedFiles = false
 	  failOnUpdateNeeded = false
       pushToCurrentBranch = true
+      project.rootProject = project.name
       scmRootDir = project.name
 	}
 
