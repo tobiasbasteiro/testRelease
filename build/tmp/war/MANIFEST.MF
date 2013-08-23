@@ -1,4 +1,4 @@
 Manifest-Version: 1.0
 Implementation-Title: Gradle Quickstart
-Implementation-Version: oepp-1.5.2.2
+Implementation-Version: aSubmodule-1.2
 
