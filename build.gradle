@@ -35,9 +35,15 @@ subprojects {
 	  failOnUnversionedFiles = false
 	  failOnUpdateNeeded = false
       pushToCurrentBranch = true
-      scmRootDir = project.name
+      scmRootDir = true
 	}
 
+}
+
+war {
+    manifest {
+        attributes 'Implementation-Title': 'Gradle Quickstart', 'Implementation-Version': version
+    }
 }
 
 repositories {
