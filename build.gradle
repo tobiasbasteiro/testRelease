@@ -35,7 +35,8 @@ subprojects {
 	  failOnUnversionedFiles = false
 	  failOnUpdateNeeded = false
       pushToCurrentBranch = true
-      scmRootDir = true
+      convention().scmRootDir = project.name
+      //scmRootDir = true
 	}
 
 }
@@ -45,7 +46,6 @@ war {
         attributes 'Implementation-Title': 'Gradle Quickstart', 'Implementation-Version': version
     }
 }
-
 repositories {
    mavenCentral()
 }
