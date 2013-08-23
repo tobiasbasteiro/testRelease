@@ -34,7 +34,7 @@ subprojects {
 	release {
 	  failOnUnversionedFiles = false
 	  failOnUpdateNeeded = false
-      project.git.scmRootDir = "/"
+      pushToCurrentBranch = true
 	}
 
 }
