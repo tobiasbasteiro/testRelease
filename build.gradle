@@ -15,21 +15,7 @@ release {
 }
 
 subprojects {
-	buildscript {
-	   repositories {
-	      mavenCentral()
-	      maven { url "https://oss.sonatype.org/content/groups/public"}
-	   }
-	   dependencies {
-	      classpath 'com.github.townsfolk:gradle-release:1.2'
-	   }
-	}
-	apply plugin: 'release'
 	
-	release {
-	  failOnUnversionedFiles = false
-	  failOnUpdateNeeded = false
-	}
 }
 
 apply plugin: 'war'
