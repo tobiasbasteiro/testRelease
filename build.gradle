@@ -35,8 +35,7 @@ subprojects {
 	  failOnUnversionedFiles = false
 	  failOnUpdateNeeded = false
       pushToCurrentBranch = true
-      convention.scmRootDir = project.name
-      //scmRootDir = true
+      scmRootDir = '/'+project.name
 	}
 
 }
