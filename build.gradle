@@ -34,7 +34,6 @@ subprojects {
 	release {
 	  failOnUnversionedFiles = false
 	  failOnUpdateNeeded = false
-	  requireBranch = 'master'
 	}    
 }
 
