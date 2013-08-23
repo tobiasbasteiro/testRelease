@@ -12,7 +12,7 @@ apply plugin: 'release'
 release {
   failOnUnversionedFiles = false
   failOnUpdateNeeded = false
-  requireBranch = 'release'
+  requireBranch = 'master'
 }
 
 subprojects {
@@ -30,7 +30,7 @@ subprojects {
 	release {
 	  failOnUnversionedFiles = false
 	  failOnUpdateNeeded = false
-	  requireBranch = 'release'
+	  requireBranch = 'master'
 	}
 	
 	apply plugin: 'war'
